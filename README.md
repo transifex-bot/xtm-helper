@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## xtm-helper
 
 You can use the [editor on GitHub](https://github.com/ehom/xtm-helper/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
