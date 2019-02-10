@@ -1,8 +1,6 @@
 ## xtm-helper
 
-You can use the [editor on GitHub](https://github.com/ehom/xtm-helper/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+`xtm-helper is a set of shell scripts that you can use to interact with [XTM](https://xtm.cloud) from the command line.
 
 ### Markdown
 
