@@ -28,8 +28,3 @@ xtm-download-proj-files.bash <project-id>
 
 Run `xtm-list-projects.bash` to get the <project-id> needed here.
 
-#### Download Project File
-
-```
-xtm-download-proj-file.bash <project-id> <file-id>
-```
