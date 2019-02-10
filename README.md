@@ -6,7 +6,7 @@ Each shell script uses the [curl](https://curl.haxx.se/) command to call a metho
 
 ### List of Scripts
 
-### List Projects
+#### List Projects
 
 ```
 xtm-list-projects.bash
