@@ -4,6 +4,20 @@
 
 ### List of Scripts
 
-* Upload Project Files
-* Download Project Files
-* Download Project File
+#### Upload Project Files
+
+```
+xtm-upload-proj-files.bash <project-id>
+```
+
+#### Download Project Files
+
+```
+xtm-download-proj-files.bash <project-id>
+```
+
+#### Download Project File
+
+```
+xtm-download-proj-file.bash <project-id> <file-id>
+```
