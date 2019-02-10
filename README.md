@@ -4,6 +4,6 @@
 
 ### List of Scripts
 
-* Upload Files to Project
-* Download Files from Project
-
+* Upload Project Files
+* Download Project Files
+* Download Project File
