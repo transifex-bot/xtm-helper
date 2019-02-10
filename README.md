@@ -13,14 +13,18 @@ xtm-list-projects.bash
 #### Upload Project Files
 
 ```
-xtm-upload-proj-files.bash <project-id>
+xtm-upload-proj-files.bash `<project-id>`.
 ```
+
+Run `xtm-list-projects.bash` to get the <project-id> needed here.
 
 #### Download Project Files
 
 ```
 xtm-download-proj-files.bash <project-id>
 ```
+
+Run `xtm-list-projects.bash` to get the <project-id> needed here.
 
 #### Download Project File
 
