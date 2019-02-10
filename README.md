@@ -28,3 +28,14 @@ xtm-download-proj-files.bash <project-id>
 
 Run `xtm-list-projects.bash` to get the <project-id> needed here.
 
+### Before using the xtm-helper
+
+You will need to run `xtm-get-token`.
+
+Take the output token and create a file named "xtm-basic-token.txt". This file is referred to as our "curl config file".
+
+```
+header: "Authorization: XTM-Basic <replace this with the token info>"
+```
+
+All the xtm-helper script refer to this curl config file.
