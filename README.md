@@ -34,8 +34,10 @@ You will need to run `xtm-get-token`.
 
 Take the output token and create a file named "xtm-basic-token.txt". This file is referred to as our "curl config file".
 
+Copy the following and paste it in the curl config file.
+
 ```
 header: "Authorization: XTM-Basic <replace this with the token info>"
 ```
 
-All the xtm-helper script refer to this curl config file.
+All of the xtm-helper scripts refer to this curl config file.
