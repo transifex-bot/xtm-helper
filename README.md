@@ -30,14 +30,34 @@ Run `xtm-list-projects.bash` to get the <project-id> needed here.
 
 ### Before using the xtm-helper
 
-You will need to run `xtm-get-token`.
+Edit xtm-generate-token.bash setting the following fields:
 
-Take the output token and create a file named "xtm-basic-token.txt". This file is referred to as our "curl config file".
+* userId
+* password
+* customer name
 
-Copy the following and paste it in the curl config file.
+After you save the changes to the file, run `xtm-generate-token.bash`.
+
+```
+$ ./xtm-generate-token.bash
+{
+   "token" : "vv0h/0J6enimWR5IRXby+Chct4gKvajka2GY9xdhHPhM6TRHwu1uPofr9aGnso6L99CKL9BI/TR4JcxVPr2hWQ=="
+}
+```
+
+Create a file named "xtm-basic-token.txt". This file is referred to as our "curl config file".
+
+Copy the token and paste it in our curl config file.
+
+Before:
 
 ```
 header: "Authorization: XTM-Basic <replace this with the token info>"
+```
+
+After:
+```
+header: "Authorization: XTM-Basic vv0h/0J6enimWR5IRXby+Chct4gKvajka2GY9xdhHPhM6TRHwu1uPofr9aGnso6L99CKL9BI/TR4JcxVPr2hWQ=="
 ```
 
 All of the xtm-helper scripts refer to this curl config file.
