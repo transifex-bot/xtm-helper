@@ -15,7 +15,7 @@ xtm-list-projects.bash
 #### Upload Project Files
 
 ```
-xtm-upload-proj-files.bash `<project-id>`.
+xtm-upload-proj-files.bash `<project-id>`
 ```
 
 Run `xtm-list-projects.bash` to get the <project-id> needed here.
@@ -26,18 +26,57 @@ Run `xtm-list-projects.bash` to get the <project-id> needed here.
 xtm-download-proj-files.bash <project-id>
 ```
 
-Run `xtm-list-projects.bash` to get the <project-id> needed here.
+Run `xtm-list-projects.bash` to look up the id of the project.
 
 ### Before using the xtm-helper
 
-You will need to run `xtm-get-token`.
+You will need to generate an XTM access token.
 
-Take the output token and create a file named "xtm-basic-token.txt". This file is referred to as our "curl config file".
+Edit the script `xtm-generate-token.bash`, setting the following fields:
 
-Copy the following and paste it in the curl config file.
+* userId
+* password
+* customer name
 
 ```
-header: "Authorization: XTM-Basic <replace this with the token info>"
+$ cat xtm-generate-token.bash
+
+#!/usr/bin/env bash
+
+# You may need to change the base URL if you are using a sandbox.
+
+XTM_BASE_URL=https://www.xtm-cloud.com/project-manager-api-rest
+
+curl --silent \
+    --data '{"client":"Acme", "password":"12345678", "userId": 88}' \
+    --header "Content-Type: application/json" \
+    $XTM_BASE_URL/auth/token | json_pp
+
+```
+
+After you save the changes to the file, run `xtm-generate-token.bash`.
+
+```
+$ ./xtm-generate-token.bash
+{
+   "token" : "vv0h/0J6enimWR5IRXby+Chct4gKvajka2GY9xdhHPhM6TRHwu1uPofr9aGnso6L99CKL9BI/TR4JcxVPr2hWQ=="
+}
+```
+
+Create a file named "xtm-basic-token.txt". This file is referred to as our "curl config file".
+
+```
+$ touch xtm-basic-token.txt
+
+```
+
+Copy the value of access token above and paste it in our curl config file.
+
+
+```
+$ cat xtm-basic-token.txt
+
+header: "Authorization: XTM-Basic vv0h/0J6enimWR5IRXby+Chct4gKvajka2GY9xdhHPhM6TRHwu1uPofr9aGnso6L99CKL9BI/TR4JcxVPr2hWQ=="
 ```
 
 All of the xtm-helper scripts refer to this curl config file.
