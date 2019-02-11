@@ -15,7 +15,7 @@ xtm-list-projects.bash
 #### Upload Project Files
 
 ```
-xtm-upload-proj-files.bash `<project-id>`.
+xtm-upload-proj-files.bash `<project-id>`
 ```
 
 Run `xtm-list-projects.bash` to get the <project-id> needed here.
@@ -30,11 +30,29 @@ Run `xtm-list-projects.bash` to get the <project-id> needed here.
 
 ### Before using the xtm-helper
 
-Edit xtm-generate-token.bash setting the following fields:
+You will need to generate an XTM access token.
+
+Edit the script `xtm-generate-token.bash`, setting the following fields:
 
 * userId
 * password
 * customer name
+
+```
+$ cat xtm-generate-token.bash
+
+#!/usr/bin/env bash
+
+# You may need to change the base URL if you are using a sandbox.
+
+XTM_BASE_URL=https://www.xtm-cloud.com/project-manager-api-rest
+
+curl --silent \
+    --data '{"client":"Acme", "password":"12345678", "userId": 88}' \
+    --header "Content-Type: application/json" \
+    $XTM_BASE_URL/auth/token | json_pp
+
+```
 
 After you save the changes to the file, run `xtm-generate-token.bash`.
 
@@ -47,16 +65,17 @@ $ ./xtm-generate-token.bash
 
 Create a file named "xtm-basic-token.txt". This file is referred to as our "curl config file".
 
-Copy the token and paste it in our curl config file.
-
-Before:
+```
+$ touch xtm-basic-token.txt
 
 ```
-header: "Authorization: XTM-Basic <replace this with the token info>"
-```
 
-After:
+Copy the value of access token above and paste it in our curl config file.
+
+
 ```
+$ cat xtm-basic-token.txt
+
 header: "Authorization: XTM-Basic vv0h/0J6enimWR5IRXby+Chct4gKvajka2GY9xdhHPhM6TRHwu1uPofr9aGnso6L99CKL9BI/TR4JcxVPr2hWQ=="
 ```
 
