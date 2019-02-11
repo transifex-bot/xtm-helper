@@ -2,7 +2,7 @@
 
 `xtm-helper` is a set of shell scripts that you can use to interact with [XTM](https://xtm.cloud) from the command line.
 
-Each shell script uses the [curl](https://curl.haxx.se/) command to call a method in XTM's REST API.
+Each shell script uses the [curl](https://curl.haxx.se/) command to call a method in [XTM's REST API](https://www.xtm-cloud.com/rest-api/).
 
 ### List of Scripts
 
