@@ -63,10 +63,10 @@ $ ./xtm-generate-token.bash
 }
 ```
 
-Create a file named "xtm-basic-token.txt". This file is referred to as our "curl config file".
+Create a file named "xtm-access-token.txt". This file is referred to as our "curl config file".
 
 ```
-$ touch xtm-basic-token.txt
+$ touch xtm-access-token.txt
 
 ```
 
@@ -74,7 +74,7 @@ Copy the value of access token above and paste it in our curl config file.
 
 
 ```
-$ cat xtm-basic-token.txt
+$ cat xtm-access-token.txt
 
 header: "Authorization: XTM-Basic vv0h/0J6enimWR5IRXby+Chct4gKvajka2GY9xdhHPhM6TRHwu1uPofr9aGnso6L99CKL9BI/TR4JcxVPr2hWQ=="
 ```

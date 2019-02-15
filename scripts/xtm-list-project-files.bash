@@ -7,4 +7,4 @@ URL=$XTM_BASE_URL/projects
 
 # set -x 
 
-curl $URL --config xtm-basic-token.txt --silent | json_pp
+curl $URL --config xtm-access-token.txt --silent | json_pp

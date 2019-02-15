@@ -9,7 +9,7 @@ function uploadFiles() {
   set -x
 
   curl --silent \
-    --config xtm-basic-token.txt \
+    --config xtm-access-token.txt \
     --form 'files[0].file=@./testfile1.txt' \
     --form 'files[1].file=@./testfile2.txt' \
     --form 'files[2].file=@./testfile3.txt' \
