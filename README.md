@@ -18,7 +18,7 @@ xtm-list-projects.bash
 xtm-upload-proj-files.bash `<project-id>`
 ```
 
-Run `xtm-list-projects.bash` to get the <project-id> needed here.
+Run `xtm-list-projects.bash` to look up the id of the project.
 
 #### Download Project Files
 
