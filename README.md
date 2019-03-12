@@ -74,7 +74,6 @@ $ touch xtm-access-token.txt
 
 Copy the value of access token above and paste it in our curl config file.
 
-
 ```
 $ cat xtm-access-token.txt
 
@@ -82,3 +81,6 @@ header: "Authorization: XTM-Basic vv0h/0J6enimWR5IRXby+Chct4gKvajka2GY9xdhHPhM6T
 ```
 
 All of the `xtm-helper` scripts refer to this curl config file.
+
+This file needs to be located here: `~/.xtm-helper/xtm-access-token.txt`
+
