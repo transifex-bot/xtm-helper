@@ -18,7 +18,7 @@ xtm-list-projects.bash
 xtm-upload-proj-files.bash `<project-id>`
 ```
 
-Run `xtm-list-projects.bash` to get the <project-id> needed here.
+Run `xtm-list-projects.bash` to look up the id of the project.
 
 #### Download Project Files
 
@@ -79,4 +79,4 @@ $ cat xtm-access-token.txt
 header: "Authorization: XTM-Basic vv0h/0J6enimWR5IRXby+Chct4gKvajka2GY9xdhHPhM6TRHwu1uPofr9aGnso6L99CKL9BI/TR4JcxVPr2hWQ=="
 ```
 
-All of the xtm-helper scripts refer to this curl config file.
+All of the `xtm-helper` scripts refer to this curl config file.
