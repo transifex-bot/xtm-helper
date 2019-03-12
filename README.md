@@ -18,6 +18,8 @@ xtm-list-projects.bash
 xtm-upload.rb -p `<project-id>` -d `<directory-path>`
 ```
 
+Proceed to on the [`xtm-upload`](https://ehom.github.io/xtm-helper/xtm-upload/) page for more info.
+
 Run `xtm-list-projects.bash` to look up the id of the project.
 
 #### Download Project Files
