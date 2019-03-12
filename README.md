@@ -15,7 +15,7 @@ xtm-list-projects.bash
 #### Upload Project Files
 
 ```
-xtm-upload-proj-files.bash `<project-id>`
+xtm-upload.rb -p `<project-id>` -d `<directory-path>`
 ```
 
 Run `xtm-list-projects.bash` to look up the id of the project.
