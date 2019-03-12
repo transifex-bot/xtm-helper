@@ -30,7 +30,7 @@ xtm-download-proj-files.bash <project-id>
 
 Run `xtm-list-projects.bash` to look up the id of the project.
 
-### Before using the xtm-helper
+### Before using the xtm-helper scripts
 
 You will need to generate an XTM access token.
 
